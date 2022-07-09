@@ -63,7 +63,7 @@ vorpal
     setInterval(() => {
       Actions.step()
 
-      vorpal.log(colors.magenta('step 1'));
+      vorpal.log("STEP 1");
     },1000)
     Actions.step()
     callback();
