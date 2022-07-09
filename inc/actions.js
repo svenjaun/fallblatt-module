@@ -56,11 +56,7 @@ module.exports = class Actions {
       vorpal.ui.redraw(colors.yellow('module initialisation\t' + (steps - this.initStep)));
 
       this.initStep++;
-      if (this.isReady) {
-        this.moduleInstance.step()
 
-        vorpal.log(colors.magenta('go'));
-      }
     }, 1000);
 
 
@@ -164,7 +160,11 @@ module.exports = class Actions {
     if (!this.isReady) return;
 
     this.moduleInstance.step();
+    setInterval(() => {
+        this.moduleInstance.step()
 
+        vorpal.log(colors.magenta('step 1'));
+    },1000)
     vorpal.log(colors.magenta('module moved 1 step ahead'));
   }
 
