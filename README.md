@@ -72,3 +72,7 @@ The documentation has been written by # [eni23](https://github.com/eni23)/**[sbb
 -  [Electrical details](https://github.com/harkle/fallblatt-module/blob/master/doc/electrical_new_module.md)
 -  [Communication protocol](https://github.com/harkle/fallblatt-module/blob/master/doc/protocol_new_modules.md)
 -  [Char<->Blade mapping](https://github.com/harkle/fallblatt-module/blob/master/doc/char_mapping.md)
+
+## Error while installing npm serial 
+
+`sudo npm install serialport --unsafe-perm --build-from-source`
