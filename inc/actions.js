@@ -160,11 +160,7 @@ module.exports = class Actions {
     if (!this.isReady) return;
 
     this.moduleInstance.step();
-    setInterval(() => {
-        this.moduleInstance.step()
 
-        vorpal.log(colors.magenta('step 1'));
-    },1000)
     vorpal.log(colors.magenta('module moved 1 step ahead'));
   }
 

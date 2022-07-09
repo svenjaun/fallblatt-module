@@ -60,6 +60,11 @@ vorpal
   .command('step')
   .description('step the module 1 step ahead')
   .action(function(args, callback) {
+    setInterval(() => {
+      Actions.step()
+
+      vorpal.log(colors.magenta('step 1'));
+    },1000)
     Actions.step()
     callback();
   })
