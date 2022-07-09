@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/harkle/fallblatt-module.git"
+    "url": "git+https://github.com/svenjaun/fallblatt-module.git"
   },
-  "author": "Lionel Tardy",
+  "author": "Sven Jaun",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/harkle/fallblatt-module/issues"
+    "url": "https://github.com/svenjaun/fallblatt-module/issues"
   },
-  "homepage": "https://github.com/harkle/fallblatt-module#readme",
+  "homepage": "https://github.com/svenjaun/fallblatt-module#readme",
   "dependencies": {
     "bootstrap-styl": "^5.0.8",
     "colors": "^1.2.0",

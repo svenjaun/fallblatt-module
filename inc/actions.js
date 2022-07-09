@@ -56,7 +56,12 @@ module.exports = class Actions {
       vorpal.ui.redraw(colors.yellow('module initialisation\t' + (steps - this.initStep)));
 
       this.initStep++;
+      if (this.isReady) {
+        this.moduleInstance.step()
+      }
     }, 1000);
+
+
   }
 
   static status(serverStatus, echo = false) {
