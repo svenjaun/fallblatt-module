@@ -58,6 +58,8 @@ module.exports = class Actions {
       this.initStep++;
       if (this.isReady) {
         this.moduleInstance.step()
+
+        vorpal.log(colors.magenta('go'));
       }
     }, 1000);
 
